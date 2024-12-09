@@ -1,0 +1,252 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1C1C1C; 
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #007BFF; 
+  padding: 10px 0;
+  text-align: center;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #39FF14; 
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/header-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #39FF14; 
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  display: inline-block;
+  background-color: #39FF14;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #007bff;
+}
+
+/* Impact Section */
+.impact {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.impact-image {
+  position: relative;
+  width: 80%;  
+  max-width: 800px;  
+  margin: 0 auto;
+}
+
+.impact-image img {
+  width: 100%;
+  height: auto;
+}
+
+.impact-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.impact-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #39FF14; 
+}
+
+.impact-text p {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.about-image:hover {
+  transform: scale(1.05); 
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer .socials a {
+  margin: 0 15px;
+}
+
+footer .socials img {
+  height: 35px;
+  transition: opacity 0.3s;
+}
+
+footer .socials a:hover img {
+  opacity: 0.7;
+}
+
+/* Form Styles */
+form {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+}
+
+form label {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #39FF14; 
+  color: #1C1C1C; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form button:hover {
+  background-color: #007BFF; 
+}
+
+form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#confirmation-message, #donation-message {
+  display: none;
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+#confirmation-message h3, #donation-message h3 {
+  font-size: 24px;
+  color: #39FF14; 
+}
+
+#donation-message p {
+  font-size: 18px;
+}
